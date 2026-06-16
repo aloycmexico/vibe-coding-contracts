@@ -17,7 +17,7 @@
 ### 1. Fork el Repositorio
 
 ```bash
-gh repo fork aloyc/vibe-coding-contracts
+gh repo fork aloycmexico/vibe-coding-contracts
 ```
 
 ### 2. Crea una Rama
