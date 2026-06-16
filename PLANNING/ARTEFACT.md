@@ -1,9 +1,15 @@
-# ARTEFACTO OPERATIVO
-**Proyecto:** [Nombre]
+# ARTEFACT
+
+Artefacto operativo compilado desde PLANNING.
+Aquí se transforma la planeación en secciones de trabajo ejecutables por agentes bajo contratos y criterios de terminado.
+
+---
+
+**Proyecto:**
 **Compilado desde:** PLANNING.md v[X.X]
-**Fecha de compilación:** [YYYY-MM-DD]
-**Escala:** [S | M | L]
-**Modo:** [Manual | Semiautomático | Automático]
+**Fecha de compilación:**
+**Escala:** S | M | L
+**Modo:** Manual | Semiautomático | Automático
 
 ---
 
@@ -38,41 +44,11 @@
 
 ---
 
-## SECCIÓN 2: [Nombre descriptivo]
-
-**Fase origen:** [Fase del PLANNING]
-**Objetivo:** [Qué se logra]
-**Dependencias:** Sección 1
-
-### Alcance
-- [Descripción concreta]
-
-### Archivos objetivo
-| Acción | Ruta | Descripción |
-|--------|------|-------------|
-| CREAR | `src/...` | [Qué es] |
-
-### Contratos activos
-| Contrato | Secciones | Motivo |
-|----------|-----------|--------|
-| UI_UX | 2, 3 | [Por qué] |
-
-### Validaciones
-- [ ] [Criterio verificable]
-
-### Criterio de terminado
-- [Condición objetiva]
-
-### Estado: `PENDIENTE`
-
----
-
 ## REGISTRO DE COMPILACIÓN
 
 | Sección | Origen en PLANNING | Estado | Fecha completado |
 |---------|-------------------|--------|------------------|
 | 1 | Fase 1 | PENDIENTE | — |
-| 2 | Fase 1 | PENDIENTE | — |
 
 ---
 

@@ -55,34 +55,39 @@ Cuando programas con IA sin guardrails:
 
 ```
 vibe-coding-contracts/
-├── AGENTS.md                                    # 🚀 Punto de entrada universal para agentes IA
-├── .cursorrules                                 # ⚡ Configuración para Cursor
-├── CLAUDE.md                                    # 🤖 Configuración para Claude Code
+├── AGENTS.md                        # Punto de entrada universal para agentes
+├── .cursorrules                     # Configuración para Cursor
+├── CLAUDE.md                        # Configuración para Claude Code
 ├── .github/
-│   └── copilot-instructions.md                  # 🐙 Configuración para GitHub Copilot
+│   └── copilot-instructions.md      # Configuración para GitHub Copilot
 │
-├── PLANNING/                                    # 📁 Centro de Comando
-│   ├── PLANNING.md                              # 📋 Visión, alcance y fases del proyecto
-│   ├── ARTEFACT.md                              # 🛠️ Artefacto operativo (compilado desde PLANNING)
-│   ├── PROJECT_STATE.md                         # 🧠 Cerebro operativo (estado actual)
-│   ├── CONTRACTS/                               # 📜 Contratos vinculantes
-│   │   ├── CONTRACT_AI_GOVERNANCE.md            # 🎼 Meta-Contrato Supremo
-│   │   ├── CONTRACT_AI_SECURITY.md              # 🛡️ Seguridad Integral (160+ cláusulas)
-│   │   ├── CONTRACT_AI_ARCHITECTURE.md          # 🏗️ Arquitectura y Clean Code
-│   │   ├── CONTRACT_AI_UI_UX_DESIGN.md          # 🎨 UX/UI y Accesibilidad
-│   │   ├── CONTRACT_AI_TESTING_QA.md            # 🧪 Testing y Calidad
-│   │   └── CONTRACT_AI_STATE_ORCHESTRATION.md   # ⚙️ Orquestación y Control de Estado
-│   └── UPDATES/                                 # 📝 Log de decisiones
-│       ├── UPDATE V1.md — V5.md                 # Registros de actualizaciones
+├── PLANNING/                        # Centro de Comando
+│   ├── PLANNING.md                  # Planeación maestro del proyecto
+│   ├── ARTEFACT.md                  # Artefacto operativo (compilado desde PLANNING)
+│   ├── PROJECT_STATE.md             # Estado operativo actual
+│   ├── CONTRACTS/                   # Contratos vinculantes
+│   │   ├── CONTRACT_AI_GOVERNANCE.md
+│   │   ├── CONTRACT_AI_SECURITY.md
+│   │   ├── CONTRACT_AI_ARCHITECTURE.md
+│   │   ├── CONTRACT_AI_UI_UX_DESIGN.md
+│   │   ├── CONTRACT_AI_TESTING_QA.md
+│   │   └── CONTRACT_AI_STATE_ORCHESTRATION.md
+│   └── UPDATES/                     # Registro de decisiones y cambios
+│       ├── UPDATE V1.md
+│       ├── UPDATE V2.md
+│       ├── ...
+│       └── UPDATE V10.md
 │
-├── .editorconfig                                # 📏 Consistencia de formato
-├── .gitignore                                   # 🚫 Archivos excluidos
-├── README.md                                    # 📖 Este archivo
-├── LICENSE.md                                   # ⚖️ Licencia MIT
-├── CHANGELOG.md                                 # 📊 Historial de cambios
-├── CONTRIBUTING.md                              # 🤝 Guía de contribución
-└── SECURITY.md                                  # 🔒 Política de seguridad
+├── .editorconfig                    # Consistencia de formato
+├── .gitignore                       # Archivos excluidos
+├── README.md                        # Este archivo
+├── LICENSE                          # Licencia MIT
+├── CHANGELOG.md                     # Historial de cambios
+├── CONTRIBUTING.md                  # Guía de contribución
+└── SECURITY.md                      # Política de seguridad
 ```
+
+> Los archivos `PLANNING.md`, `ARTEFACT.md`, `PROJECT_STATE.md` y los `UPDATE V*.md` se incluyen como **plantillas vacías listas para rellenar**. Cada proyecto los completa con su propia planeación, artefacto operativo, estado y registro de actualizaciones.
 
 ## 🚀 Inicio Rápido
 
