@@ -17,7 +17,7 @@ La seguridad es nuestra prioridad #1. Si descubres una vulnerabilidad de segurid
 
 ### Proceso de Reporte Responsable
 
-1. **Envía un email** a: **security@aloyc.mx**
+1. **Envía un email** a: **support@aloycmexico.net**
 2. **Incluye** en tu reporte:
    - Descripción detallada de la vulnerabilidad
    - Pasos para reproducirla
@@ -171,13 +171,13 @@ Nos comprometemos a:
 ## 📞 Contacto
 
 Para reportes de seguridad:
-- **Email**: security@aloyc.mx
+- **Email**: support@aloycmexico.net
 - **PGP Key**: [Disponible en servidor de claves públicas]
 - **Respuesta esperada**: 48 horas
 
 Para preguntas generales de seguridad:
-- **GitHub Discussions**: [Categoría de Seguridad](https://github.com/aloyc/vibe-coding-contracts/discussions/categories/security)
-- **Email**: contacto@aloyc.mx
+- **GitHub Discussions**: [Categoría de Seguridad](https://github.com/aloycmexico/vibe-coding-contracts/discussions/categories/security)
+- **Email**: support@aloycmexico.net
 
 ---
 
