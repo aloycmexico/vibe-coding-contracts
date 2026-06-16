@@ -258,7 +258,7 @@ Lee nuestra [Guía de Contribución](./CONTRIBUTING.md) para más detalles.
 
 ## 📄 Licencia
 
-Este proyecto está licenciado bajo la **Licencia MIT** — ver el archivo [LICENSE](./LICENSE.md) para más detalles.
+Este proyecto está licenciado bajo la **Licencia MIT** — ver el archivo [LICENSE](./LICENSE) para más detalles.
 
 **Resumen:**
 
