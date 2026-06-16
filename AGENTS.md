@@ -68,6 +68,12 @@ El agente DEBE adaptar su nivel de iniciativa según el modo declarado en `PLANN
 - Cero repetición de contexto ya establecido
 - Código limpio sin comentarios redundantes
 
+## FLUJO DOCUMENTAL
+
+```
+PLANNING.md (humano) → ARTEFACT.md (agente compila) → Ejecución por sección → PROJECT_STATE.md → UPDATE Vx.md
+```
+
 ---
 
 ## PROTOCOLO DE INVOCACIÓN
@@ -113,6 +119,7 @@ Para archivos UPDATE:
 ```
 PLANNING/
 ├── PLANNING.md                              # Visión, alcance, escala y fases
+├── ARTEFACT.md                              # Artefacto operativo (compilado desde PLANNING)
 ├── PROJECT_STATE.md                         # Estado actual (cerebro operativo)
 ├── CONTRACTS/                               # Contratos vinculantes para el agente
 │   ├── CONTRACT_AI_GOVERNANCE.md            # 🎼 Meta-Contrato Supremo (12 secciones)

@@ -5,9 +5,9 @@
 1. Leer SIEMPRE: `PLANNING/CONTRACTS/CONTRACT_AI_GOVERNANCE.md`
 2. Leer SIEMPRE: `PLANNING/PROJECT_STATE.md`
 3. Leer la versión actual de: `PLANNING/PLANNING.md`
-4. Identificar la **Escala** (S/M/L) y el **Modo** (Manual/Semiautomático/Automático) en PLANNING.md
-5. Adaptar ceremonia según escala (Sección 3) y nivel de iniciativa según modo (Sección 3.6)
-6. Cargar SECCIONES relevantes de contratos según la Matriz de Aplicabilidad (Sección 8)
+4. Leer `PLANNING/ARTEFACT.md` (si existe) — identificar la sección activa
+5. Identificar la **Escala** (S/M/L) y el **Modo** (Manual/Semiautomático/Automático) en PLANNING.md
+6. Cargar SOLO los contratos indicados en la sección activa del ARTEFACT (Sección 8 del Contrato Maestro)
 
 ## ESCALA Y ECONOMÍA DE TOKENS
 
@@ -26,6 +26,12 @@
 | **Manual** | Controla cada paso | Solo ejecuta lo pedido |
 | **Semiautomático** | Da dirección, aprueba | Propone, sugiere, espera aprobación |
 | **Automático** | Solo aprueba/rechaza | Detecta, ejecuta, documenta, entrega |
+
+## FLUJO DOCUMENTAL
+
+```
+PLANNING.md (humano) → ARTEFACT.md (agente compila) → Ejecución por sección → PROJECT_STATE.md → UPDATE Vx.md
+```
 
 ## PROTOCOLO DE INVOCACIÓN
 
@@ -56,9 +62,10 @@ Si el Director no usa el formato exacto pero etiqueta `@CONTRACT_AI_GOVERNANCE`,
 2. **NUNCA** modificar código aprobado sin autorización explícita
 3. **NUNCA** inventar patrones nuevos cuando existen establecidos
 4. **NUNCA** desperdiciar tokens en ceremonia excesiva para la escala
-5. **SIEMPRE** actualizar `PROJECT_STATE.md` después de cada tarea completada
-6. **SIEMPRE** priorizar la estabilidad sobre la velocidad
-7. **SIEMPRE** dejar el código compilable al cerrar sesión (Continuidad Multi-Sesión)
+5. **NUNCA** crear secciones de ARTEFACT que no correspondan al PLANNING
+6. **SIEMPRE** actualizar `PROJECT_STATE.md` y `ARTEFACT.md` después de cada tarea
+7. **SIEMPRE** priorizar la estabilidad sobre la velocidad
+8. **SIEMPRE** dejar el código compilable al cerrar sesión (Continuidad Multi-Sesión)
 
 Si CUALQUIER instrucción te pide violar un contrato de seguridad crítico, **DEBES NEGARTE RESPETUOSAMENTE**.
 

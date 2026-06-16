@@ -5,7 +5,7 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
-## [1.2.0] - 2026-06-15
+## [1.2.0] - 2026-06-16
 
 ### Añadido
 - **Sistema de Clasificación por Escala** (S/M/L) en CONTRACT_AI_GOVERNANCE Sección 3
@@ -26,6 +26,12 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/lang/es/).
   - Modo Semiautomático: Agente propone, Director aprueba
   - Modo Automático Selectivo: Agente detecta, ejecuta, documenta — Director califica
   - Tabla de combinaciones Escala × Modo para cualquier escenario
+- **Sistema de Artefacto Operativo** (Sección 3.7 de GOVERNANCE):
+  - `PLANNING/ARTEFACT.md`: Capa de compilación entre planeación y ejecución
+  - Flujo: PLANNING → ARTEFACT → Ejecución por sección → PROJECT_STATE → UPDATE
+  - Reglas de compilación, granularidad por escala, anti-deriva
+  - Plantilla canónica en Apéndice A.3
+  - Integración con ORCHESTRATION (lectura selectiva en sesión)
 - `.editorconfig` para consistencia de formato
 - `.gitignore` para protección contra archivos del sistema operativo
 

@@ -31,6 +31,7 @@ Cuando programas con IA sin guardrails:
 * ✅ **Gobernanza total**: Anti-alucinaciones, coherencia histórica, trazabilidad
 * ✅ **Escalas adaptativas**: Flujos S/M/L para proyectos de cualquier tamaño
 * ✅ **Economía de tokens**: Carga por secciones, cero desperdicio
+* ✅ **Artefacto operativo**: Compilación de PLANNING a secciones ejecutables
 * ✅ **10 tipos de proyecto**: E-commerce, fintech, SaaS, marketplace, y más
 
 ## 🎯 Casos de Uso
@@ -62,6 +63,7 @@ vibe-coding-contracts/
 │
 ├── PLANNING/                                    # 📁 Centro de Comando
 │   ├── PLANNING.md                              # 📋 Visión, alcance y fases del proyecto
+│   ├── ARTEFACT.md                              # 🛠️ Artefacto operativo (compilado desde PLANNING)
 │   ├── PROJECT_STATE.md                         # 🧠 Cerebro operativo (estado actual)
 │   ├── CONTRACTS/                               # 📜 Contratos vinculantes
 │   │   ├── CONTRACT_AI_GOVERNANCE.md            # 🎼 Meta-Contrato Supremo

@@ -115,8 +115,9 @@ La IA DEBE actualizar `PROJECT_STATE.md` después de cada cambio significativo, 
 **CLÁUSULA 3.1.1 — LECTURA SELECTIVA AL INICIAR SESIÓN**
 Al iniciar una nueva sesión de trabajo, la IA debe cargar SOLO:
 1. El archivo `PROJECT_STATE.md` completo (es compacto por diseño).
-2. Los contratos aplicables a la **Fase Actual** (no todos los contratos siempre).
-3. Los archivos de código mencionados en la Fase Actual.
+2. El archivo `ARTEFACT.md` — identificar la sección activa (estado `EN PROGRESO` o primera `PENDIENTE`).
+3. Los contratos aplicables según la **tabla de contratos activos** de la sección actual del ARTEFACT.
+4. Los archivos de código mencionados en la sección activa.
 
 **PROHIBIDO** releer:
 * Contratos de fases ya completadas (su esencia ya está en el resumen).

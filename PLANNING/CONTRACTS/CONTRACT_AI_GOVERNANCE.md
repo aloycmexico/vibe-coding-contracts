@@ -250,6 +250,62 @@ Las combinaciones más comunes son:
 
 ---
 
+## 3.7 PROTOCOLO DE COMPILACIÓN DE ARTEFACTO
+
+**CLÁUSULA 3.7.1 — DEFINICIÓN Y PROPÓSITO**
+El archivo `PLANNING/ARTEFACT.md` es el **artefacto operativo** del proyecto. El agente lo genera compilando `PLANNING.md` en secciones ejecutables. No es una copia del PLANNING — es su transformación en instrucciones de trabajo con contratos activos, archivos objetivo, validaciones y criterio de terminado.
+
+**CLÁUSULA 3.7.2 — FLUJO DOCUMENTAL COMPLETO**
+```
+PLANNING.md (humano escribe) 
+    → ARTEFACT.md (agente compila)
+        → Ejecución por sección (agente ejecuta)
+            → PROJECT_STATE.md (agente actualiza estado)
+                → UPDATE Vx.md (humano registra decisiones)
+```
+
+**CLÁUSULA 3.7.3 — CUÁNDO SE COMPILA EL ARTEFACTO**
+- Al inicio del proyecto (cuando PLANNING.md está completo)
+- Cuando PLANNING.md se actualiza significativamente (nuevo UPDATE)
+- Cuando el Director lo solicita explícitamente
+
+El agente NUNCA compila un artefacto si PLANNING.md está incompleto o vacío. Si detecta secciones faltantes, se DETIENE y lo reporta.
+
+**CLÁUSULA 3.7.4 — REGLAS DE COMPILACIÓN**
+
+1. **Cada fase del PLANNING se descompone** en una o más secciones del ARTEFACT
+2. **Cada sección es autocontenida**: tiene alcance, archivos, contratos, validaciones y criterio de terminado
+3. **Solo se activan los contratos necesarios** por sección (economía de tokens)
+4. **El artefacto NO duplica contenido** del PLANNING — lo referencia con `Fase origen: [X]`
+5. **El artefacto NO contiene texto narrativo** — es 100% operativo
+6. **Las dependencias entre secciones se declaran explícitamente**
+7. **El estado de cada sección se sincroniza** con PROJECT_STATE.md
+
+**CLÁUSULA 3.7.5 — GRANULARIDAD POR ESCALA**
+
+| Escala | Secciones por Fase | Detalle por Sección | Tabla de Contratos |
+|--------|--------------------|---------------------|--------------------|
+| **S** | 1 sección por fase | Mínimo (alcance + archivos + criterio) | Solo contrato principal |
+| **M** | 1-3 secciones por fase | Estándar (completo) | Contratos + secciones específicas |
+| **L** | 2-5 secciones por fase | Detallado (con sub-tareas) | Contratos + cláusulas específicas |
+
+**CLÁUSULA 3.7.6 — ANTI-DERIVA**
+- El agente NUNCA crea secciones que no correspondan a una fase del PLANNING
+- El agente NUNCA cambia el alcance de una sección sin UPDATE del Director
+- Si el agente detecta trabajo necesario que no está en el PLANNING, lo reporta como `[🚨 AVISO: Trabajo no planificado detectado]` y espera autorización
+- El ARTEFACT se versiona con la misma versión del PLANNING del que fue compilado
+
+**CLÁUSULA 3.7.7 — ESTADOS VÁLIDOS POR SECCIÓN**
+```
+PENDIENTE → EN PROGRESO → EN REVISIÓN → COMPLETADO
+                                      → RECHAZADO → EN PROGRESO (corregir)
+```
+
+**CLÁUSULA 3.7.8 — ENLACE CON PROJECT_STATE**
+Cuando el agente actualiza el estado de una sección en ARTEFACT.md, DEBE reflejar el mismo cambio en PROJECT_STATE.md. No puede haber discrepancia entre ambos documentos.
+
+---
+
 ## 4. PROTOCOLO DE ECONOMÍA DE TOKENS
 
 **CLÁUSULA 4.0.1 — PRINCIPIO DE MÍNIMO CONTEXTO NECESARIO**
@@ -1003,6 +1059,53 @@ Al operar bajo este Contrato Maestro de Gobernanza, el agente declara:
 [Cómo afecta al proyecto]
 ```
 
+### A.3 Plantilla de ARTEFACT
+
+```markdown
+# ARTEFACTO OPERATIVO
+**Proyecto:** [Nombre]
+**Compilado desde:** PLANNING.md v[X.X]
+**Fecha de compilación:** [YYYY-MM-DD]
+**Escala:** [S | M | L]
+**Modo:** [Manual | Semiautomático | Automático]
+
+---
+
+## SECCIÓN 1: [Nombre descriptivo]
+
+**Fase origen:** [Fase del PLANNING]
+**Objetivo:** [Qué se logra]
+
+### Alcance
+- [Descripción concreta]
+
+### Archivos objetivo
+| Acción | Ruta | Descripción |
+|--------|------|-------------|
+| CREAR | `src/...` | [Qué es] |
+
+### Contratos activos
+| Contrato | Secciones | Motivo |
+|----------|-----------|--------|
+| SECURITY | 1-3 | [Por qué] |
+
+### Validaciones
+- [ ] [Criterio verificable]
+
+### Criterio de terminado
+- [Condición objetiva]
+
+### Estado: `PENDIENTE`
+
+---
+
+## REGISTRO DE COMPILACIÓN
+
+| Sección | Origen en PLANNING | Estado | Fecha completado |
+|---------|-------------------|--------|------------------|
+| 1 | Fase 1 | PENDIENTE | — |
+```
+
 ---
 
 ## APÉNDICE B: CHECKLIST MAESTRO DE CUMPLIMIENTO
@@ -1011,8 +1114,9 @@ Al operar bajo este Contrato Maestro de Gobernanza, el agente declara:
 - [ ] He leído CONTRACT_AI_GOVERNANCE.md
 - [ ] He leído PLANNING.md (versión correcta)
 - [ ] He leído PROJECT_STATE.md
+- [ ] He leído ARTEFACT.md (si existe)
 - [ ] He identificado la fase y tarea actual
-- [ ] He cargado los contratos relevantes
+- [ ] He cargado los contratos relevantes según la sección activa del ARTEFACT
 
 ### Durante la Ejecución
 - [ ] Estoy aplicando todos los contratos relevantes
@@ -1023,6 +1127,7 @@ Al operar bajo este Contrato Maestro de Gobernanza, el agente declara:
 
 ### Después de Cada Tarea
 - [ ] He actualizado PROJECT_STATE.md
+- [ ] He actualizado el estado de la sección en ARTEFACT.md
 - [ ] He hecho commit con referencias completas
 - [ ] He verificado que el código pasa todos los checks
 - [ ] He marcado la tarea como [ESPERANDO REVISIÓN]
