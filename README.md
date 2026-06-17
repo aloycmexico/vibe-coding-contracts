@@ -8,7 +8,7 @@
 
 ## 📋 Descripción
 
-Este framework establece un **sistema de gobernanza completo** para proyectos de desarrollo asistido por IA (Cursor, Claude Code, Gemini, Copilot, Windsurf, Cline, etc.). A través de 7 contratos vinculantes, transforma la IA de un "asistente creativo" en un **equipo virtual de ingenieros senior** con responsabilidades claras, protocolos estrictos y mecanismos anti-alucinación.
+Este framework establece un **sistema de gobernanza completo** para proyectos de desarrollo asistido por IA. A través de 7 contratos vinculantes, transforma cualquier agente capaz de leer markdown — sin importar proveedor, modelo o precio — en un **equipo virtual de ingenieros senior** con responsabilidades claras, protocolos estrictos y mecanismos anti-alucinación.
 
 ### ¿Qué problema resuelve?
 
@@ -45,10 +45,23 @@ Cuando programas con IA sin guardrails:
 * **Empresas** que quieren estandarizar el desarrollo con IA
 * **Educadores** que enseñan ingeniería de software moderna
 
-### Compatible con:
+### Compatibilidad
 
+**Herramientas de desarrollo con IA:**
+Cursor, Claude Code, GitHub Copilot, Windsurf, Cline, Antigravity, Gemini Code Assist, Gemini CLI, Codex CLI, Aider, Continue, y cualquier herramienta capaz de leer markdown y operar sobre un repositorio.
+
+**Modelos y proveedores:**
+Claude (Anthropic), GPT (OpenAI), Gemini (Google), DeepSeek, Qwen, Mistral, Llama, y cualquier modelo actual o futuro con capacidad de seguir instrucciones estructuradas.
+
+**Requisitos mínimos del agente:**
+* Lectura de archivos markdown
+* Seguimiento de instrucciones multi-paso
+* Capacidad de operar por secciones o contexto completo
+
+> Los modelos frontier aprovechan mejor contextos amplios y tareas complejas. Los modelos más pequeños u open-weight son suficientes para cambios puntuales, iteraciones acotadas o proyectos de baja complejidad. El framework se adapta al nivel de agente disponible sin perder estructura.
+
+**Stack técnico:**
 * **Frameworks**: Next.js, React, Vue, Svelte, Node.js, y cualquier otro
-* **Herramientas IA**: Cursor, Claude Code, GitHub Copilot, Windsurf, Cline, Gemini Code Assist
 * **Bases de datos**: Supabase, PostgreSQL, MongoDB, cualquier SQL/NoSQL
 * **Plataformas**: Vercel, Netlify, Railway, AWS, GCP, Azure
 

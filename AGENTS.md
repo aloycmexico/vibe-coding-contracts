@@ -3,7 +3,7 @@
 > **Framework de Contratos para Vibe Coding** — Diseñado por Alexis Loyola Campos (Aloyc México)
 >
 > Este archivo es el **punto de entrada universal** para cualquier agente de IA que trabaje en este proyecto.
-> Compatible con: Cursor, Windsurf, Claude Code, GitHub Copilot, Gemini Code Assist, Cline, y cualquier otro agente.
+> Compatible con cualquier agente capaz de leer markdown y seguir instrucciones estructuradas, sin importar proveedor ni modelo.
 
 ---
 
