@@ -8,7 +8,7 @@
 
 ## 📋 Descripción
 
-Este framework establece un **sistema de gobernanza completo** para proyectos de desarrollo asistido por IA (Cursor, Claude Code, Gemini, Copilot, Windsurf, Cline, etc.). A través de 6 contratos vinculantes, transforma la IA de un "asistente creativo" en un **equipo virtual de ingenieros senior** con responsabilidades claras, protocolos estrictos y mecanismos anti-alucinación.
+Este framework establece un **sistema de gobernanza completo** para proyectos de desarrollo asistido por IA (Cursor, Claude Code, Gemini, Copilot, Windsurf, Cline, etc.). A través de 7 contratos vinculantes, transforma la IA de un "asistente creativo" en un **equipo virtual de ingenieros senior** con responsabilidades claras, protocolos estrictos y mecanismos anti-alucinación.
 
 ### ¿Qué problema resuelve?
 
@@ -137,7 +137,7 @@ Invoca al agente con el protocolo estándar:
 Implementar sistema de autenticación con OAuth
 ```
 
-## 📚 Los 6 Contratos
+## 📚 Los 7 Contratos
 
 ### 🎼 Contrato Maestro de Gobernanza
 
@@ -174,6 +174,12 @@ Implementar sistema de autenticación con OAuth
 **Checklist maestro** con aprobación explícita, auto-llenado de PROJECT\_STATE, continuidad multi-sesión, prevención de decisiones unilaterales, y protocolo de inicio/fin de sesión.
 
 [Leer contrato →](./PLANNING/CONTRACTS/CONTRACT_AI_STATE_ORCHESTRATION.md)
+
+### 🖼️ Contrato de Inputs Visuales
+
+**Gestión de referencias visuales y assets**: jerarquía formal entre planeación textual y diseño visual, clasificación de assets (obligatorio/referencia), resolución de conflictos visual-textual, e integración con ARTEFACT.
+
+[Leer contrato →](./PLANNING/CONTRACTS/CONTRACT_AI_VISUAL_INPUTS.md)
 
 ## 🔥 Características Destacadas
 
