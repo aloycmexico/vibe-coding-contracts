@@ -65,6 +65,41 @@ Claude (Anthropic), GPT (OpenAI), Gemini (Google), DeepSeek, Qwen, Mistral, Llam
 * **Bases de datos**: Supabase, PostgreSQL, MongoDB, cualquier SQL/NoSQL
 * **Plataformas**: Vercel, Netlify, Railway, AWS, GCP, Azure
 
+## 🔗 Recursos y API Keys
+
+Para obtener acceso a los modelos y herramientas compatibles con este framework:
+
+### Proveedores de modelos
+| Proveedor | Modelos principales | Obtener API Key |
+|-----------|-------------------|-----------------|
+| Anthropic | Claude | [console.anthropic.com](https://console.anthropic.com) |
+| OpenAI | GPT, Codex, o1 | [platform.openai.com](https://platform.openai.com) |
+| Google | Gemini | [aistudio.google.com](https://aistudio.google.com) |
+| DeepSeek | DeepSeek-V3, R1 | [platform.deepseek.com](https://platform.deepseek.com) |
+| Mistral | Mistral, Codestral | [console.mistral.ai](https://console.mistral.ai) |
+| Alibaba | Qwen | [dashscope.aliyun.com](https://dashscope.aliyun.com) |
+| Meta | Llama (vía proveedores) | [llama.developer.meta.com](https://llama.developer.meta.com) |
+| NVIDIA | Nemotron, NIM | [build.nvidia.com](https://build.nvidia.com) |
+
+### Herramientas y agentes
+| Herramienta | Descripción | Acceso |
+|-------------|-------------|--------|
+| Cursor | Editor IA con agente integrado | [cursor.com](https://cursor.com) |
+| Claude Code | Agente CLI de Anthropic | [claude.ai/code](https://claude.ai/code) |
+| GitHub Copilot | Asistente IA en VS Code / GitHub | [github.com/features/copilot](https://github.com/features/copilot) |
+| Windsurf | Editor IA de Codeium | [codeium.com/windsurf](https://codeium.com/windsurf) |
+| Antigravity | Plataforma multi-agente | [antigravity.dev](https://antigravity.dev) |
+| Cline | Agente IA open source para VS Code | [github.com/cline/cline](https://github.com/cline/cline) |
+| Aider | Agente CLI para Git | [aider.chat](https://aider.chat) |
+| Continue | Extensión IA open source | [continue.dev](https://continue.dev) |
+| Gemini CLI | CLI de Google con Gemini | [github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) |
+
+### Comparativa y benchmarks actualizados
+> Los modelos evolucionan constantemente. Para comparar capacidades, benchmarks y precios actualizados consulta:
+> - [Artificial Analysis](https://artificialanalysis.ai) — calidad, velocidad y precio por modelo
+> - [LMSYS Chatbot Arena](https://lmsys.org) — ranking por votación humana
+> - [OpenRouter](https://openrouter.ai/models) — precios y disponibilidad en tiempo real
+
 ## 🏗️ Estructura del Framework
 
 ```text
