@@ -54,21 +54,20 @@ Cuando programas con IA sin guardrails:
 
 ## 🏗️ Estructura del Framework
 
-```
+```text
 vibe-coding-contracts/
-├── AGENTS.md                        # Punto de entrada universal para agentes
-├── .cursorrules                     # Configuración para Cursor
-├── CLAUDE.md                        # Configuración para Claude Code
+├── AGENTS.md
+├── .cursorrules
+├── CLAUDE.md
 ├── .github/
-│   └── copilot-instructions.md      # Configuración para GitHub Copilot
-│
-├── PLANNING/                        # Centro de Comando
-│   ├── PLANNING.md                  # Planeación maestro del proyecto
-│   ├── DESIGN.md                    # Especificación visual (opcional)
-│   ├── ARTEFACT.md                  # Artefacto operativo (compilado desde PLANNING)
-│   ├── PROJECT_STATE.md             # Estado operativo actual
-│   ├── ASSETS/                      # Recursos visuales y media (opcional)
-│   ├── CONTRACTS/                   # Contratos vinculantes
+│   └── copilot-instructions.md
+├── PLANNING/
+│   ├── PLANNING.md
+│   ├── DESIGN.md
+│   ├── ARTEFACT.md
+│   ├── PROJECT_STATE.md
+│   ├── ASSETS/
+│   ├── CONTRACTS/
 │   │   ├── CONTRACT_AI_GOVERNANCE.md
 │   │   ├── CONTRACT_AI_SECURITY.md
 │   │   ├── CONTRACT_AI_ARCHITECTURE.md
@@ -76,19 +75,18 @@ vibe-coding-contracts/
 │   │   ├── CONTRACT_AI_VISUAL_INPUTS.md
 │   │   ├── CONTRACT_AI_TESTING_QA.md
 │   │   └── CONTRACT_AI_STATE_ORCHESTRATION.md
-│   └── UPDATES/                     # Registro de decisiones y cambios
+│   └── UPDATES/
 │       ├── UPDATE V1.md
 │       ├── UPDATE V2.md
 │       ├── ...
 │       └── UPDATE V10.md
-│
-├── .editorconfig                    # Consistencia de formato
-├── .gitignore                       # Archivos excluidos
-├── README.md                        # Este archivo
-├── LICENSE                          # Licencia MIT
-├── CHANGELOG.md                     # Historial de cambios
-├── CONTRIBUTING.md                  # Guía de contribución
-└── SECURITY.md                      # Política de seguridad
+├── .editorconfig
+├── .gitignore
+├── README.md
+├── LICENSE
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+└── SECURITY.md
 ```
 
 > Los archivos `PLANNING.md`, `DESIGN.md`, `ARTEFACT.md`, `PROJECT_STATE.md` y los `UPDATE V*.md` se incluyen como **plantillas vacías listas para rellenar**. La carpeta `ASSETS/` y `DESIGN.md` son opcionales — el framework funciona sin inputs visuales.
