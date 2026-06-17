@@ -37,6 +37,7 @@ Usar la **Matriz de Aplicabilidad** (Sección 8 del Contrato Maestro) para carga
 | 🛡️ Seguridad | `PLANNING/CONTRACTS/CONTRACT_AI_SECURITY.md` | APIs, Auth, DB, Pagos, Contenedores, Edge, Integraciones IA |
 | 🏗️ Arquitectura | `PLANNING/CONTRACTS/CONTRACT_AI_ARCHITECTURE.md` | Siempre (es transversal) |
 | 🎨 UX/UI | `PLANNING/CONTRACTS/CONTRACT_AI_UI_UX_DESIGN.md` | Componentes UI, Formularios, Páginas |
+| 🖼️ Inputs Visuales | `PLANNING/CONTRACTS/CONTRACT_AI_VISUAL_INPUTS.md` | Si existe DESIGN.md o ASSETS/ |
 | 🧪 Testing | `PLANNING/CONTRACTS/CONTRACT_AI_TESTING_QA.md` | Tests, QA, Refactorización |
 | ⚙️ Orquestación | `PLANNING/CONTRACTS/CONTRACT_AI_STATE_ORCHESTRATION.md` | Gestión de estado y flujo de trabajo |
 
@@ -119,17 +120,20 @@ Para archivos UPDATE:
 ```
 PLANNING/
 ├── PLANNING.md                              # Visión, alcance, escala y fases
+├── DESIGN.md                                # Especificación visual (opcional)
 ├── ARTEFACT.md                              # Artefacto operativo (compilado desde PLANNING)
 ├── PROJECT_STATE.md                         # Estado actual (cerebro operativo)
+├── ASSETS/                                  # Recursos visuales y media (opcional)
 ├── CONTRACTS/                               # Contratos vinculantes para el agente
-│   ├── CONTRACT_AI_GOVERNANCE.md            # 🎼 Meta-Contrato Supremo (12 secciones)
-│   ├── CONTRACT_AI_SECURITY.md              # 🛡️ Seguridad Integral (160+ cláusulas, 20 secciones)
-│   ├── CONTRACT_AI_ARCHITECTURE.md          # 🏗️ Arquitectura y Clean Code
-│   ├── CONTRACT_AI_UI_UX_DESIGN.md          # 🎨 UX/UI y Accesibilidad
-│   ├── CONTRACT_AI_TESTING_QA.md            # 🧪 Testing y Calidad
-│   └── CONTRACT_AI_STATE_ORCHESTRATION.md   # ⚙️ Orquestación y Control de Estado
+│   ├── CONTRACT_AI_GOVERNANCE.md            # Meta-Contrato Supremo
+│   ├── CONTRACT_AI_SECURITY.md              # Seguridad Integral (160+ cláusulas)
+│   ├── CONTRACT_AI_ARCHITECTURE.md          # Arquitectura y Clean Code
+│   ├── CONTRACT_AI_UI_UX_DESIGN.md          # UX/UI y Accesibilidad
+│   ├── CONTRACT_AI_VISUAL_INPUTS.md         # Inputs Visuales y Assets
+│   ├── CONTRACT_AI_TESTING_QA.md            # Testing y Calidad
+│   └── CONTRACT_AI_STATE_ORCHESTRATION.md   # Orquestación y Control de Estado
 └── UPDATES/                                 # Log de decisiones y cambios
-    ├── UPDATE V1.md — V5.md                 # Registros de actualizaciones
+    ├── UPDATE V1.md — V10.md                # Registros de actualizaciones
 ```
 
 ---

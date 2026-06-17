@@ -32,6 +32,7 @@ Cuando programas con IA sin guardrails:
 * ✅ **Escalas adaptativas**: Flujos S/M/L para proyectos de cualquier tamaño
 * ✅ **Economía de tokens**: Carga por secciones, cero desperdicio
 * ✅ **Artefacto operativo**: Compilación de PLANNING a secciones ejecutables
+* ✅ **Inputs visuales**: Soporte formal para mockups, assets y referencias UX/UI
 * ✅ **10 tipos de proyecto**: E-commerce, fintech, SaaS, marketplace, y más
 
 ## 🎯 Casos de Uso
@@ -63,13 +64,16 @@ vibe-coding-contracts/
 │
 ├── PLANNING/                        # Centro de Comando
 │   ├── PLANNING.md                  # Planeación maestro del proyecto
+│   ├── DESIGN.md                    # Especificación visual (opcional)
 │   ├── ARTEFACT.md                  # Artefacto operativo (compilado desde PLANNING)
 │   ├── PROJECT_STATE.md             # Estado operativo actual
+│   ├── ASSETS/                      # Recursos visuales y media (opcional)
 │   ├── CONTRACTS/                   # Contratos vinculantes
 │   │   ├── CONTRACT_AI_GOVERNANCE.md
 │   │   ├── CONTRACT_AI_SECURITY.md
 │   │   ├── CONTRACT_AI_ARCHITECTURE.md
 │   │   ├── CONTRACT_AI_UI_UX_DESIGN.md
+│   │   ├── CONTRACT_AI_VISUAL_INPUTS.md
 │   │   ├── CONTRACT_AI_TESTING_QA.md
 │   │   └── CONTRACT_AI_STATE_ORCHESTRATION.md
 │   └── UPDATES/                     # Registro de decisiones y cambios
@@ -87,7 +91,7 @@ vibe-coding-contracts/
 └── SECURITY.md                      # Política de seguridad
 ```
 
-> Los archivos `PLANNING.md`, `ARTEFACT.md`, `PROJECT_STATE.md` y los `UPDATE V*.md` se incluyen como **plantillas vacías listas para rellenar**. Cada proyecto los completa con su propia planeación, artefacto operativo, estado y registro de actualizaciones.
+> Los archivos `PLANNING.md`, `DESIGN.md`, `ARTEFACT.md`, `PROJECT_STATE.md` y los `UPDATE V*.md` se incluyen como **plantillas vacías listas para rellenar**. La carpeta `ASSETS/` y `DESIGN.md` son opcionales — el framework funciona sin inputs visuales.
 
 ## 🚀 Inicio Rápido
 

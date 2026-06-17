@@ -99,6 +99,7 @@ PLANNING/CONTRACTS/
 ├── CONTRACT_AI_SECURITY.md            # Seguridad Integral (160+ cláusulas, 20 secciones)
 ├── CONTRACT_AI_ARCHITECTURE.md        # Arquitectura y Clean Code
 ├── CONTRACT_AI_UI_UX_DESIGN.md        # Diseño UX/UI y Accesibilidad
+├── CONTRACT_AI_VISUAL_INPUTS.md       # Inputs Visuales y Gestión de Assets
 ├── CONTRACT_AI_TESTING_QA.md          # Testing y Calidad
 └── CONTRACT_AI_STATE_ORCHESTRATION.md # Orquestación y Control de Estado
 ```
@@ -600,12 +601,13 @@ El agente DEBE auto-monitorearse y detenerse si detecta:
 | **Autenticación/Login** | SECURITY, ARCHITECTURE | UI_UX, TESTING | - |
 | **Base de Datos/Queries** | SECURITY, ARCHITECTURE | TESTING | - |
 | **APIs/Endpoints** | SECURITY, ARCHITECTURE | TESTING | UI_UX |
-| **Componentes UI** | UI_UX, ARCHITECTURE | SECURITY, TESTING | - |
-| **Formularios** | UI_UX, SECURITY, ARCHITECTURE | TESTING | - |
+| **Componentes UI** | UI_UX, ARCHITECTURE | VISUAL_INPUTS, TESTING | - |
+| **Formularios** | UI_UX, SECURITY, ARCHITECTURE | VISUAL_INPUTS, TESTING | - |
 | **Integraciones (Stripe, etc)** | SECURITY, ARCHITECTURE | TESTING | UI_UX |
 | **Tests Unitarios** | TESTING, ARCHITECTURE | SECURITY | - |
 | **Tests E2E** | TESTING, UI_UX | SECURITY, ARCHITECTURE | - |
 | **Refactorización** | ARCHITECTURE, TESTING | SECURITY, UI_UX | - |
+| **Páginas/Layouts** | UI_UX, ARCHITECTURE | VISUAL_INPUTS, SECURITY | - |
 | **Documentación** | ARCHITECTURE | Todos los demás | - |
 | **Configuración/DevOps** | SECURITY | ARCHITECTURE | - |
 
@@ -626,6 +628,8 @@ SI tarea INCLUYE (componente UI, página, formulario):
   CARGAR @CRÍTICO: CONTRACT_AI_UI_UX_DESIGN (todas las cláusulas)
   CARGAR @CRÍTICO: CONTRACT_AI_ARCHITECTURE (cláusulas 3.x, 5.x, 6.x)
   CARGAR @RELEVANTE: CONTRACT_AI_SECURITY (cláusulas 5.x)
+  SI existe DESIGN.md:
+    CARGAR @RELEVANTE: CONTRACT_AI_VISUAL_INPUTS
 
 SI tarea INCLUYE (test, spec, coverage):
   CARGAR @CRÍTICO: CONTRACT_AI_TESTING_QA (todas las cláusulas)

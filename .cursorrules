@@ -6,8 +6,9 @@
 2. Leer SIEMPRE: `PLANNING/PROJECT_STATE.md`
 3. Leer la versión actual de: `PLANNING/PLANNING.md`
 4. Leer `PLANNING/ARTEFACT.md` (si existe) — identificar la sección activa
-5. Identificar la **Escala** (S/M/L) y el **Modo** (Manual/Semiautomático/Automático) en PLANNING.md
-6. Cargar SOLO los contratos indicados en la sección activa del ARTEFACT (Sección 8 del Contrato Maestro)
+5. Leer `PLANNING/DESIGN.md` (si existe) — identificar referencia visual y assets
+6. Identificar la **Escala** (S/M/L) y el **Modo** (Manual/Semiautomático/Automático) en PLANNING.md
+7. Cargar SOLO los contratos indicados en la sección activa del ARTEFACT (Sección 8 del Contrato Maestro)
 
 ## ESCALA Y ECONOMÍA DE TOKENS
 
@@ -30,7 +31,7 @@
 ## FLUJO DOCUMENTAL
 
 ```
-PLANNING.md (humano) → ARTEFACT.md (agente compila) → Ejecución por sección → PROJECT_STATE.md → UPDATE Vx.md
+PLANNING.md (humano) → DESIGN.md (visual, opcional) → ARTEFACT.md (agente compila) → Ejecución → PROJECT_STATE.md → UPDATE Vx.md
 ```
 
 ## PROTOCOLO DE INVOCACIÓN
@@ -53,6 +54,7 @@ Si el Director no usa el formato exacto pero etiqueta `@CONTRACT_AI_GOVERNANCE`,
 | 🛡️ Seguridad | `PLANNING/CONTRACTS/CONTRACT_AI_SECURITY.md` | APIs, Auth, DB, Pagos, Contenedores, Edge |
 | 🏗️ Arquitectura | `PLANNING/CONTRACTS/CONTRACT_AI_ARCHITECTURE.md` | Siempre |
 | 🎨 UX/UI | `PLANNING/CONTRACTS/CONTRACT_AI_UI_UX_DESIGN.md` | Componentes UI, Formularios |
+| 🖼️ Inputs Visuales | `PLANNING/CONTRACTS/CONTRACT_AI_VISUAL_INPUTS.md` | Si existe DESIGN.md o ASSETS/ |
 | 🧪 Testing | `PLANNING/CONTRACTS/CONTRACT_AI_TESTING_QA.md` | Tests, QA |
 | ⚙️ Orquestación | `PLANNING/CONTRACTS/CONTRACT_AI_STATE_ORCHESTRATION.md` | Gestión de estado |
 

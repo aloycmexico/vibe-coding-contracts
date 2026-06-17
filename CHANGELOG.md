@@ -5,6 +5,19 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.3.0] - 2026-06-17
+
+### Añadido
+- **Sistema de Inputs Visuales y Gestión de Assets**:
+  - `PLANNING/DESIGN.md`: Plantilla de especificación visual (opcional)
+  - `PLANNING/ASSETS/`: Carpeta para recursos visuales y media del proyecto
+  - `PLANNING/CONTRACTS/CONTRACT_AI_VISUAL_INPUTS.md`: Contrato de inputs visuales (6 secciones)
+  - Jerarquía formal: PLANNING > DESIGN > Imagen principal > Assets obligatorios > Assets de referencia
+  - Clasificación de assets: obligatorio vs referencia
+  - Protocolo de resolución de conflictos visual-textual
+  - Integración con Matriz de Aplicabilidad (Sección 8 de GOVERNANCE)
+  - Retro-compatible: el framework funciona sin inputs visuales
+
 ## [1.2.0] - 2026-06-16
 
 ### Añadido
