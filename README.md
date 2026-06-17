@@ -89,7 +89,11 @@ vibe-coding-contracts/
 └── SECURITY.md
 ```
 
-> Los archivos `PLANNING.md`, `DESIGN.md`, `ARTEFACT.md`, `PROJECT_STATE.md` y los `UPDATE V*.md` se incluyen como **plantillas vacías listas para rellenar**. La carpeta `ASSETS/` y `DESIGN.md` son opcionales — el framework funciona sin inputs visuales.
+> Los archivos `PLANNING.md`, `ARTEFACT.md`, `PROJECT_STATE.md` y los `UPDATE V*.md`
+> se incluyen como plantilla base intencionalmente vacía para que cada proyecto
+> los rellene con su propia planeación, sin arrastrar contenido de ejemplo innecesario.
+> `DESIGN.md` y `ASSETS/` son opcionales: úsalos solo si tu proyecto requiere
+> inputs visuales, logos, media o referencias de diseño UI/UX.
 
 ## 🚀 Inicio Rápido
 
